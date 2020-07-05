@@ -22,6 +22,7 @@ using OsEngine.Robots.MarketMaker;
 using OsEngine.Robots.Patterns;
 using OsEngine.Robots.Trend;
 using OsEngine.Robots.OnScriptIndicators;
+using OsEngine.Robots.Experiment;
 using System.Runtime;
 
 namespace OsEngine.Robots
@@ -71,6 +72,9 @@ namespace OsEngine.Robots
             result.Add("PriceChannelVolatility");
             result.Add("RsiTrade");
             result.Add("RviTrade");
+
+            //Experiment
+            result.Add("MaBang");
 
             List<string> resultTrue = new List<string>();
 
@@ -261,7 +265,11 @@ namespace OsEngine.Robots
             {
                 bot = new PairTraderSpreadSma(name, startProgram);
             }
-
+            //Experiment
+            if (nameClass == "MaBang")
+            {
+                bot = new MaBang(name, startProgram);
+            }
 
             return bot;
         }
