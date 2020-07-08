@@ -75,6 +75,15 @@ namespace OsEngine.Robots
 
             //Experiment
             result.Add("MaBang");
+            result.Add("AlligatorTrendBot");
+            result.Add("BollingerTrendBot");
+            result.Add("PriceChannelBot");
+            result.Add("PriceChannelBotSell");
+            result.Add("RollParamBot");
+            result.Add("RollParamBotSell");
+            result.Add("TimeToEnter");
+            result.Add("DaysToEnter");
+            result.Add("DaysToEnterMA");
 
             List<string> resultTrue = new List<string>();
 
@@ -264,11 +273,48 @@ namespace OsEngine.Robots
             if (nameClass == "PairTraderSpreadSma")
             {
                 bot = new PairTraderSpreadSma(name, startProgram);
-            }
+            }                     
+            
             //Experiment
             if (nameClass == "MaBang")
             {
                 bot = new MaBang(name, startProgram);
+            }
+            if (nameClass == "AlligatorTrendBot")
+            {
+                bot = new AlligatorTrendBot(name, startProgram);
+            }
+            if (nameClass == "BollingerTrendBot")
+            {
+                bot = new BollingerTrendBot(name, startProgram);
+            }
+            if (nameClass == "PriceChannelBot")
+            {
+                bot = new PriceChannelBot(name, startProgram);
+            }
+            if (nameClass == "PriceChannelBotSell")
+            {
+                bot = new PriceChannelBotSell(name, startProgram);
+            }
+            if (nameClass == "RollParamBot")
+            {
+                bot = new RollParamBot(name, startProgram);
+            }
+            if (nameClass == "RollParamBotSell")
+            {
+                bot = new RollParamBotSell(name, startProgram);
+            }
+            if (nameClass == "TimeToEnter")
+            {
+                bot = new TimeToEnter(name, startProgram);
+            }
+            if (nameClass == "DaysToEnter")
+            {
+                bot = new DaysToEnter(name, startProgram);
+            }
+            if (nameClass == "DaysToEnterMA")
+            {
+                bot = new DaysToEnterMA(name, startProgram);
             }
 
             return bot;
