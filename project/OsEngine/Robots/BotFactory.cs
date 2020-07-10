@@ -77,8 +77,11 @@ namespace OsEngine.Robots
             result.Add("MaBang");
             result.Add("AlligatorTrendBot");
             result.Add("BollingerTrendBot");
+            result.Add("BbTrendTouch");
             result.Add("PriceChannelBot");
             result.Add("PriceChannelBotSell");
+            result.Add("Envelop");
+            result.Add("EnvelopFix");
             result.Add("RollParamBot");
             result.Add("RollParamBotSell");
             result.Add("TimeToEnter");
@@ -288,6 +291,10 @@ namespace OsEngine.Robots
             {
                 bot = new BollingerTrendBot(name, startProgram);
             }
+            if (nameClass == "BbTrendTouch")
+            {
+                bot = new BbTrendTouch(name, startProgram);
+            }
             if (nameClass == "PriceChannelBot")
             {
                 bot = new PriceChannelBot(name, startProgram);
@@ -295,6 +302,14 @@ namespace OsEngine.Robots
             if (nameClass == "PriceChannelBotSell")
             {
                 bot = new PriceChannelBotSell(name, startProgram);
+            }
+            if (nameClass == "Envelop")
+            {
+                bot = new Envelop(name, startProgram);
+            }
+            if (nameClass == "EnvelopFix")
+            {
+                bot = new EnvelopFix(name, startProgram);
             }
             if (nameClass == "RollParamBot")
             {

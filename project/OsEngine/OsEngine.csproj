@@ -722,9 +722,12 @@
     <Compile Include="Robots\Engines\CandleEngine.cs" />
     <Compile Include="Robots\Engines\ClusterEngine.cs" />
     <Compile Include="Robots\Experiment\AlligatorTrendBot.cs" />
+    <Compile Include="Robots\Experiment\BbTrendTouch.cs" />
     <Compile Include="Robots\Experiment\BollingerTrendBot.cs" />
     <Compile Include="Robots\Experiment\DaysToEnter.cs" />
     <Compile Include="Robots\Experiment\DaysToEnterMA.cs" />
+    <Compile Include="Robots\Experiment\Envelop.cs" />
+    <Compile Include="Robots\Experiment\EnvelopFix.cs" />
     <Compile Include="Robots\Experiment\MaBang.cs" />
     <Compile Include="Robots\Experiment\PriceChannelBot.cs" />
     <Compile Include="Robots\Experiment\PriceChannelBotSell.cs" />
